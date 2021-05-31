@@ -1,0 +1,51 @@
+Dicas para baixar o código fonte:
+
+O código da Aula 02 vem com o projeto completo com a pasta vendor
+basta rodar o comando... php artisan serve ...
+Os demais fontes vão estar sem a pasta vendor do Composer e a pasta de módulos do Node JS
+Assim ... antes de rodar o projeto vc deve rodar:
+composer update - para criar a pasta vendor
+npm install - para criar a pasta de módulos do node js
+
+.........
+
+Laravel:
+https://laravel.com/docs/5.5
+
+Comando:
+composer create-project --prefer-dist laravel/laravel blog "5.5.*"
+
+Rodar Servidor PHP:
+php artisan serve
+
+Ativar sistema de login:
+php artisan make:auth
+
+Criar tabelas do Banco de Dados:
+php artisan migrate
+
+AdminLTE:
+    https://adminlte.io/themes/AdminLTE/index.html
+
+Resource Controllers do Laravel:
+https://laravel.com/docs/5.5/controllers#resource-controllers
+
+laravel-5.5-pt-BR-localization:
+    https://github.com/enniosousa/laravel-5.5-pt-BR-localization
+
+    cd resources/lang/
+    git clone https://github.com/enniosousa/laravel-5.5-pt-BR-localization.git ./pt-BR
+
+    obs: Você pode remover o diretório .git para poder incluir
+    e versionar os arquivos deste projeto no seu repositório:
+
+    rm -rf pt-BR/.git/
+
+    Configurar o Framework para utilizar a linguagem como Default
+    // Linha 81 do arquivo config/app.php
+    'locale' => 'pt-BR',
+
+CKEditor:
+https://github.com/dangvanthanh/vue-ckeditor2
+https://github.com/dangvanthanh/vue-ckeditor2/wiki/Getting-Started
+npm install vue-ckeditor2 --save
